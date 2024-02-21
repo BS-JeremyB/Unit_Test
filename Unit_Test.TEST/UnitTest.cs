@@ -192,5 +192,18 @@ namespace Unit_Test.TEST
 
         #endregion
 
+        #region TestDataShare
+
+        [Theory]
+        [Trait("Category", "DataShare")]
+        [MemberData(nameof(DataShare.IsEvenData), MemberType = typeof(DataShare))]
+        public void IsEven(int number, bool expected)
+        {
+            TestDataShare TestDataShare = new TestDataShare();
+            bool result = TestDataShare.IsEven(number);
+
+            Assert.Equal(expected, result);
+        }
+        #endregion
     }
 }
