@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Unit_Test.APP;
+using Unit_Test.APP.Unit;
 
-namespace Unit_Test.TEST
+namespace Unit_Test.TEST.Unit
 {
     public class UnitTest
     {
@@ -28,7 +28,7 @@ namespace Unit_Test.TEST
             TestNumber TestNumber = new TestNumber();
             double result = TestNumber.Add(2.6, 2.03);
 
-            Assert.Equal(4.6, result,1);
+            Assert.Equal(4.6, result, 1);
         }
 
         [Theory]
@@ -54,7 +54,7 @@ namespace Unit_Test.TEST
             TestString TestString = new TestString();
             string result = TestString.FullName("john", "Doe");
 
-            Assert.Equal("John Doe", result, ignoreCase:true);
+            Assert.Equal("John Doe", result, ignoreCase: true);
         }
 
         [Fact]
@@ -120,7 +120,7 @@ namespace Unit_Test.TEST
         {
             TestCollection TestCollection = new TestCollection();
 
-            Assert.DoesNotContain(4,TestCollection.fibonacciSeries);
+            Assert.DoesNotContain(4, TestCollection.fibonacciSeries);
         }
 
         [Fact]

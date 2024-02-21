@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Unit_Test.APP
+namespace Unit_Test.APP.Unit
 {
-    public class TestDataShare
+    public class TestRange
     {
-        public bool IsEven(int number)
+        public TestRange()
         {
-            return number % 2 == 0;
+            Age = 25;
         }
+        public int Age { get; set; }
     }
 }

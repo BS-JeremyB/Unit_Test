@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Unit_Test.APP
+namespace Unit_Test.APP.Unit
 {
     public class TestObject
     {
@@ -16,7 +16,7 @@ namespace Unit_Test.APP
 
     }
 
-    public class  TestObjectChild : TestObject
+    public class TestObjectChild : TestObject
     {
         public TestObjectChild()
         {
